@@ -1,0 +1,124 @@
+:root{
+    --white: #ffffff;
+    --black: #252424;
+    --very-light-pink: #adabab;
+    --text-input-pink: #eeeded;
+    --france-blue: #3c6eb4;
+    --font-zise-lg: 2rem;
+    --font-zise-md: 1.6rem;
+    --font-zise-sm: 1.4rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 50%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-content: center;
+}
+
+.form-container{
+    display: grid;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border-radius: 8px;
+    grid-template-rows: auto 1fr auto;
+}
+
+ .form-container span{
+    width: 180px;
+    height: 80px;
+    margin-top: 8px;
+    background-image: url("./assets/Logo/logo1.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-self: center;
+ }
+
+.form-container h1{
+    margin-top: 20px;
+    font-size: var(--font-zise-lg);
+    color: var(--black);
+    text-align: center;
+}
+
+.form-container p{
+    margin-bottom: 5px;
+    font-size: var(--font-zise-sm);
+    color: var(--very-light-pink);
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+ .form .label{
+    font-size: var(--font-zise-sm);
+    font-weight: bold;
+    margin-top: 15px;
+ }
+
+ .form .input{
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--text-input-pink);
+ }
+
+ .form .input:focus{
+    box-shadow: rgb(206, 206, 206) 0 0 8px 1px;
+    outline: none;
+ }
+
+ .primary-button{
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--france-blue);
+    font-family: 'Quicksand', sans-serif;
+    font-size: var(--font-zise-md);
+    font-weight: bold;
+    color: var(--white);
+ }
+
+ .primary-button:hover{
+    background-color: #3f60a1;
+ }
+ 
+ .primary-button:active{
+    background-color: #294172;
+ }
+
+ /** ************************************************************ **/
+ @media (min-width: 900px){
+     .form-container span{
+         display: none;
+     }
+ }
+ @media (min-width: 500px)
+ {
+     .form-container{
+         background-color: var(--white);
+         box-shadow: rgba(63, 59, 59, 0.151) 0px 0px 8px 1px ;
+     }
+ }
