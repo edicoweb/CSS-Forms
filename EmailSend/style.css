@@ -24,7 +24,7 @@ main{
     width: 100%;
     height: 100vh;
     display: grid;
-    place-content: center;
+    place-items: center;
 }
 
 .form-container{
@@ -34,9 +34,10 @@ main{
     padding: 20px;
     border-radius: 8px;
     grid-template-rows: auto 1fr auto;
+    justify-items: center;
 }
 
- .form-container .logo{
+.form-container .logo{
     width: 180px;
     height: 80px;
     margin-top: 8px;
@@ -44,8 +45,8 @@ main{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    justify-self: center;
- }
+    justify-self: center; 
+}
 
 .form-container h1{
     margin-top: 20px;
@@ -55,43 +56,31 @@ main{
 }
 
 .form-container p{
-    margin-bottom: 5px;
+    margin-top: 5px;
     font-size: var(--font-zise-sm);
     color: var(--very-light-pink);
     text-align: center;
 }
 
-.form{
+.email-send{
     display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 68px;
+    margin-top: 10px;
+    background-color: var(--text-input-pink);
+    justify-content: center;
+    align-items: center;
 }
 
- .form .label{
-    font-size: var(--font-zise-sm);
-    font-weight: bold;
-    margin-top: 15px;
- }
+.email-send img{
+    width: 85px;
+}
 
- .form .input{
+.primary-button{
     width: 100%;
     height: 35px;
-    padding: 10px;
     margin-top: 10px;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--text-input-pink);
- }
-
- .form .input:focus{
-    box-shadow: rgb(206, 206, 206) 0 0 8px 1px;
-    outline: none;
- }
-
- .primary-button{
-    width: 100%;
-    height: 35px;
-    margin-top: 20px;
     border: none;
     border-radius: 8px;
     background-color: var(--france-blue);
@@ -99,24 +88,41 @@ main{
     font-size: var(--font-zise-md);
     font-weight: bold;
     color: var(--white);
- }
+}
 
- .primary-button:hover{
+.primary-button:hover{
     background-color: #3f60a1;
- }
- 
- .primary-button:active{
-    background-color: #294172;
- }
+}
 
- /** ************************************************************ **/
- @media (min-width: 900px){
+.primary-button:active{
+    background-color: #294172;
+}
+
+.login-button{
+    margin-bottom: 10px;
+}
+ .resend{
+    font-size: var(--font-zise-md);
+    font-weight: bold;
+}
+
+.resend span{
+    color: var(--very-light-pink);
+}
+
+.resend a{
+    text-decoration: none;
+    color: var(--france-blue);
+}
+
+@media (min-width: 900px){
+    
     .form-container{
         background-color: var(--white);
         box-shadow: rgba(63, 59, 59, 0.151) 0px 0px 8px 1px ;
     }
-
+    
     .form-container .logo{
-         display: none;
-     }
- }
+        display: none;
+    }
+}
