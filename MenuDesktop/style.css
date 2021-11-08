@@ -1,0 +1,61 @@
+:root{
+    --white: #ffffff;
+    --black: #252424;
+    --very-light-pink: #adabab;
+    --text-input-pink: #eeeded;
+    --france-blue: #3c6eb4;
+    --font-zise-lg: 2rem;
+    --font-zise-md: 1.6rem;
+    --font-zise-sm: 1.4rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.desktop-menu{  
+    width: 150px;
+    height: auto;
+    padding: 20px 20px 0 20px;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+}
+
+.desktop-menu ul{
+    list-style: none;
+}
+
+.desktop-menu ul li{
+    text-align: end;
+}
+
+.desktop-menu ul li a{
+    display: inline-block;
+    margin-bottom: 20px;
+    color: black;
+    font-size: var(--font-zise-sm);
+    text-decoration: none;
+}
+
+.desktop-menu ul li:nth-child(1),
+.desktop-menu ul li:nth-child(2){
+    font-weight: bold;
+}
+
+.desktop-menu ul li:last-child{
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+}
+
+.desktop-menu ul li:last-child a{
+    color: var(--france-blue);
+    font-size: var(--font-zise-sm);
+}
+
