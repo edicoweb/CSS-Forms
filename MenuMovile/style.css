@@ -1,0 +1,65 @@
+:root{
+    --white: #ffffff;
+    --black: #252424;
+    --very-light-pink: #adabab;
+    --text-input-pink: #eeeded;
+    --france-blue: #3c6eb4;
+    --font-zise-lg: 2rem;
+    --font-zise-md: 1.6rem;
+    --font-zise-sm: 1.4rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.mobile-menu{   
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile-menu ul{
+    list-style: none;
+}
+
+.mobile-menu .mobile-menu-options ul{
+    margin-bottom: 20px;
+}
+
+.mobile-menu .mobile-menu-options ul:nth-child(1){
+    border-bottom: 1px solid var(--very-light-pink);
+}
+
+.mobile-menu ul li{
+    margin: 15px 0;
+}
+
+.mobile-menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: var(--font-zise-md);
+    font-weight: bold;
+}
+
+.mobile-menu ul .email a{
+    font-size: var(--font-zise-sm);
+    font-weight: 300;
+    color: var(--france-blue);
+}
+
+.mobile-menu ul .sign-out a{
+    font-size: var(--font-zise-sm);
+    color: var(--france-blue);
+    font-weight: 300;
+}
