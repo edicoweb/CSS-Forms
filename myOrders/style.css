@@ -1,0 +1,45 @@
+:root{
+    --white: #ffffff;
+    --black: #252424;
+    --very-light-pink: #adabab;
+    --text-input-pink: #eeeded;
+    --france-blue: #3c6eb4;
+    --font-zise-lg: 2rem;
+    --font-zise-md: 1.6rem;
+    --font-zise-sm: 1.4rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+}
+
+.my-orders-container{
+    width: 500px;
+    height: auto;
+    background-color: aqua;
+}
+
+.my-orders-container h1{
+    margin-bottom: 45px;
+    font-size: var(--font-zise-lg);
+    font-weight: bold;
+}
+
+.my-orders-container .my-orders-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
