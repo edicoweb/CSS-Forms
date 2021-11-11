@@ -30,7 +30,7 @@ main{
 .my-orders-container{
     width: 500px;
     height: auto;
-    background-color: aqua;
+    padding: 10px;
 }
 
 .my-orders-container h1{
@@ -41,5 +41,44 @@ main{
 
 .my-orders-container .my-orders-content{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 80px;
+    padding: 0 15px;
+    margin-bottom: 25px;
+    grid-template-columns: auto 1fr auto;
+    background-color: white;
+    align-items: center;
+}
+
+.my-orders-content p{
+    display: flex;
+    flex-direction: column;
+}
+
+.my-orders-content p span:nth-child(1){
+    font-size: var(--font-zise-md);
+    font-weight: bold;
+}
+
+.my-orders-content p span:nth-child(2){
+    font-size: var(--font-zise-sm);
+    font-weight: 400;
+    color: var(--very-light-pink);
+}
+
+.my-orders-content p:nth-child(2){
+    display: flex;
+    padding-right: 25px;
+    font-size: var(--font-zise-md);
+    font-weight: bold;
+    align-items: flex-end;
+}
+
+.my-orders-content .icon{
+    width: 15px;
+    height: 15px;
+    background-image: url("../assets/Icons/icon-directions.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
