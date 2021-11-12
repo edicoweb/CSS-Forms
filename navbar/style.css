@@ -21,10 +21,8 @@ html{
 }
 
 header{
-    display: grid;
     width: 100%;
     border-bottom: 1px solid var(--very-light-pink);
-    grid-template-columns: 1fr auto auto auto;
 }
 
 header nav{
@@ -41,11 +39,13 @@ nav .navbar-right{
     display: flex;
     align-items: center;
 }
+
 .navbar-left .logo{
     width: 120px;
     padding: 8px;
     cursor: pointer; 
 }
+
 nav .navbar-left ul li,
 nav .navbar-right ul li{
     margin: 0 8px;
