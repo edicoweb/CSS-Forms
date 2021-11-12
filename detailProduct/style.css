@@ -31,6 +31,7 @@ main{
     position: relative;
     width: 400px;
     height: auto;
+    border-radius: 0 0 25px 25px;
     background-color:var(--text-input-pink);
 }
 
@@ -76,23 +77,27 @@ main{
     margin-bottom: 12px;
 }
 
+.button{
+    margin: 25px 0 ;
+    display: flex;
+    justify-content: center;
+}
 .product-detail .primary-button{
-    width: 100%;
+    display: flex;
+    width: 80%;
     height: 35px;
-    margin-bottom: 12px;
     border: none;
-    border-radius: 8px;
+    border-radius: 12px;
     background-color: var(--france-blue);
     font-family: 'Quicksand', sans-serif;
     font-size: var(--font-zise-md);
     font-weight: bold;
     color: var(--white);
-}
-
-.product{
-    width: 500px;
+    align-items: center;
+    justify-content: center;
 }
 
 .add-to-cart{
     width: 20px;
+    margin-right: 15px;
 }
